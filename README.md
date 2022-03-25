@@ -1,5 +1,8 @@
 # RANKIFY
 
+![image](https://user-images.githubusercontent.com/96402339/160059829-da30c6a2-551a-4d03-9b67-60dc498799bf.png)
+
+
 ## App Description
 We're in the era where music is everywhere. While walking to work, cleaning the house, or just simply lying in bed. But do you feel that sometimes you can do more than just listen? What if you can both enjoy and learn at the same time? What if you can test your knowledge (about music) with other people and be competitive with them?
 
