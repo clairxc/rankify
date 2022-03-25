@@ -36,7 +36,7 @@ This app will bring out your listening abilities and your competitiveness all wh
 <img width="514" alt="image" src="https://user-images.githubusercontent.com/96402339/160187401-6da0da80-6d8e-455e-89d0-0c0580a1723d.png">
 
 ## ERDs
-<img width="570" alt="image" src="https://user-images.githubusercontent.com/96402339/160054457-8489690b-eefb-4b40-a889-c5a5658dafc7.png">
+![image](https://user-images.githubusercontent.com/96402339/160208851-c365e17a-cd83-4913-b6a6-6eb62a02b83b.png)
 
 ## RESTful Routing Chart
 
