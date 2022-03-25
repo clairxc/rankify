@@ -12,6 +12,7 @@ Earn scores by guessing the song within the time limit and challenge other peopl
 ## User Stories
   - As an unregistered user, I would like to sign up with name, username, email and password
   - As a registered user, I would like to sign in with username OR email and password
+  - As a signed in user, I would like to be able to change/update my password
   - As a signed in user, I would like to sign out
   - As a signed in user, I would like to navigate to my profile page
   - As a signed in user, I would like to be able to search for an artist
@@ -19,19 +20,13 @@ Earn scores by guessing the song within the time limit and challenge other peopl
   - As a signed in user, I would like to be able to favorite a song
   - As a signed in user, I would like to see past games, past scores, favorited artists & songs
   - As a signed in user, I would like to be able to play “the game” based on the artist/song I favorited..?
-    - As a signed in user playing the game, I would like to have the ability to choose music from different categories
-    - As a signed in user playing the game, I would like to be able to choose from multiple answers (multiple choice)
     - As a signed in user playing the game, I would like to be “graded” on my guesses (implement a grading system)
       - Tally up points at the end
-    - As a signed in user, I can see my and other users’ scores on the leaderboard
-      - Leaderboard PER artist
+    - As a signed in user, I can see my game history/scores on my profile page
 
 
 ## API
   - Spotify API
-# Backup APIs
-  - Apple Music API
-  - Deezer Api
 
 ## Tech Stack
   - React
@@ -41,7 +36,7 @@ Earn scores by guessing the song within the time limit and challenge other peopl
   - HTML/CSS
 
 ## Wireframes
-<img width="577" alt="image" src="https://user-images.githubusercontent.com/96402339/160054518-071aaf4c-a545-453f-b8cb-bd686f0b3e59.png">
+<img width="514" alt="image" src="https://user-images.githubusercontent.com/96402339/160187401-6da0da80-6d8e-455e-89d0-0c0580a1723d.png">
 
 ## ERDs
 <img width="570" alt="image" src="https://user-images.githubusercontent.com/96402339/160054457-8489690b-eefb-4b40-a889-c5a5658dafc7.png">
@@ -52,22 +47,13 @@ Earn scores by guessing the song within the time limit and challenge other peopl
 |    :---:     |     :---:      |    :---:      |    :---:      |
 | POST | /register | Create (Create) | Register a new user |
 | GET | /login  | Index (Read) | Check if user exists, if true, log in user |
+| PUT | /forgot | Update (Update) | User can change/update their password
 | GET | / | Index (Read) | Home page |
-| GET | /profile  | Show (Read) | Display logged in user's profile |
-| POST | /profile  | Create (Create) | Create a profile page (unique to user) |
-| GET | /artist/:id | Show (Read) | Display favorited artist details |
-| POST | /artist/:id/add | Create (Create) | Add artist to user's favorites |
-| DELETE | /artist/:id | Destroy (Delete) | Delete a favorited artist |
-| POST | /artist/:id/comment | Create (Create) | User is able to create a comment for a specific artist |
-| PUT | /artist/:id/comment/:commentID | Update (Update) | User can update their comment |
-| DELETE | /artist/:id/comment | Destroy (Delete) | User can delete the comments they wrote about the artist |
-| GET | /song/:id | Show (Read) | Display favorited song details |
-| POST | /song/:id/add | Create (Create) | Add song to user's favorites |
-| DELETE | /song/:id | Destroy (Delete) | Delete a favorited song |
-| POST | /song/:id/comment | Create (Create) | User is able to create a comment for a specific song |
-| PUT | /song/:id/comment/:commentID | Update (Update) | User can update their comment |
-| DELETE | /song/:id/comment | Destroy (Delete) | User can delete the comments they wrote about the song |
+| GET | /profile  | Show (Read) | Display logged in user's profile (can also view game history here)|
 | GET | /game | Show (Read) | Display game screen
+| DELETE | /score/:id | Delete (Destroy) | User can delete a score
+| GET | /search | Show (Read) | Display user search results
+| GET| /search/:id | Show (Read) | Display selected search
 
 
 ## MVP Goals
@@ -76,20 +62,12 @@ Earn scores by guessing the song within the time limit and challenge other peopl
 - [ ] Create a welcome/home page 
 - [ ] Create a navbar
 - [ ] Create a timer
-- [ ] Create a search screen 
+- [ ] Create a search screen (user can search for an artist)
 - [ ] Create a game play screen
 - [ ] Create a user profile page 
-- [ ] Create a song details page
-- [ ] Create an artist details page
-- [ ] Allow a user to add personal comments to their favorited artist(s)
-- [ ] Allow a user to edit their comments to their favorited artist(s)
-- [ ] Allow a user to delete their comments to their favorited artist(s)
-- [ ] Allow a user to add personal comments to their favorited song(s)
-- [ ] Allow a user to edit their comments to their favorited song(s)
-- [ ] Allow a user to delete their comments to their favorited song(s)
-- [ ] Create a leaderboard (per artist)
-- [ ] Create a grading/point system
+- [ ] Create a score counter system
 
 ## Stretch Goals
+- [ ] Have different game levels
 - [ ] Modal that shows the score
-- [ ] Leaderboard per genre
+- [ ] Create a leaderboard showing the top scores of ALL users
