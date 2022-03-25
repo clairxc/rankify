@@ -16,14 +16,11 @@ Earn scores by guessing the song within the time limit and challenge other peopl
   - As a signed in user, I would like to sign out
   - As a signed in user, I would like to navigate to my profile page
   - As a signed in user, I would like to be able to search for an artist
-  - As a signed in user, I would like to be able to favorite an artist
-  - As a signed in user, I would like to be able to favorite a song
-  - As a signed in user, I would like to see past games, past scores, favorited artists & songs
+  - As a signed in user, I would like to see past games, past scores
   - As a signed in user, I would like to be able to play “the game” based on the artist/song I favorited..?
-    - As a signed in user playing the game, I would like to be “graded” on my guesses (implement a grading system)
+    - As a signed in user playing the game, I would like to be “graded” on my guesses (implement a score counter)
       - Tally up points at the end
     - As a signed in user, I can see my game history/scores on my profile page
-
 
 ## API
   - Spotify API
