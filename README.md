@@ -44,7 +44,7 @@ This app will bring out your listening abilities and your competitiveness all wh
 |    :---:     |     :---:      |    :---:      |    :---:      |
 | POST | /register | Create (Create) | Register a new user |
 | GET | /login  | Index (Read) | Check if user exists, if true, log in user |
-| PUT | /forgot | Update (Update) | User can change/update their password
+| PUT | /changepassword | Update (Update) | User can change/update their password
 | GET | / | Index (Read) | Home page |
 | GET | /profile  | Show (Read) | Display logged in user's profile (can also view game history here)|
 | GET | /game | Show (Read) | Display game screen
