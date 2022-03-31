@@ -42,15 +42,15 @@ This app will bring out your listening abilities and your competitiveness all wh
 
 | VERB | URL PATTERN | ACTION (CRUD) | DESCRIPTION |
 |    :---:     |     :---:      |    :---:      |    :---:      |
-| POST | /register | Create (Create) | Register a new user |
-| GET | /login  | Index (Read) | Check if user exists, if true, log in user |
-| PUT | /changepassword | Update (Update) | User can change/update their password
 | GET | / | Index (Read) | Home page |
+| POST | users/register | Create (Create) | Register a new user |
+| GET | users/login  | Index (Read) | Check if user exists, if true, log in user |
+| GET | users/auth-locked | Index (Read) | ???? |
+| PUT | /changepassword | Update (Update) | User can change/update their password
 | GET | /profile  | Show (Read) | Display logged in user's profile (can also view game history here)|
 | GET | /game | Show (Read) | Display game screen
-| DELETE | /score/:id | Delete (Destroy) | User can delete a score
-| GET | /search | Show (Read) | Display user search results
-| GET| /search/:id | Show (Read) | Display selected search
+| POST | /game/:id | Create (Create) | Create game result for user |
+| DELETE | /game/:id | Delete (Destroy) | User can delete a game |
 
 
 ## MVP Goals
@@ -58,7 +58,6 @@ This app will bring out your listening abilities and your competitiveness all wh
 - [ ] Create a login page
 - [ ] Create a welcome/home page 
 - [ ] Create a navbar
-- [ ] Create a timer
 - [ ] Create a search screen (user can search for an artist)
 - [ ] Create a game play screen
 - [ ] Create a user profile page 
